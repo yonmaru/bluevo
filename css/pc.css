@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* デスクトップPC用CSS */
+
+.hidden-sp {
+	display:inherit !important;
+}
+.hidden-tb {
+	display:inherit !important;
+}
+.hidden-pc {
+	display:none !important;
+}
+.only-sp {
+	display: none !important;
+}
+.only-tb {
+	display: none !important;
+}
+.only-pc {
+	display: inherit !important;
+}
+.only-small {
+	display: none !important;
+}
+.only-big {
+	display: inherit!important;
+}
+
+
+#header li:last-of-type a {
+    display: inline-block;
+    background-color: #4A95CF;
+    color:#fff;
+    text-align: center;
+    position: relative;
+    transition: background-color 0.1s linear;
+    padding:0.6em 3em;
+    margin-top:-0.6em;
+    border-radius: 120px;
+    -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+}
+#header li:last-of-type a:hover {
+    background-color: #89BFE8;
+}
+
+

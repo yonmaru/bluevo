@@ -1,0 +1,474 @@
+@charset "UTF-8";
+/* スマートフォン用CSS */
+
+.hidden-sp {
+	display:none !important;
+}
+.hidden-tb {
+	display: inherit !important;
+}
+.hidden-pc {
+	display: inherit !important;
+}
+.only-sp {
+	display: inherit !important;
+}
+.only-tb {
+	display: none !important;
+}
+.only-pc {
+	display: none !important;
+}
+.only-small {
+	display: inherit !important;
+}
+.only-big {
+	display: none !important;
+}
+
+
+html {
+	font-size:2.5vw;
+}
+
+/* =========================================================== FONTS */
+#wrapper {
+    padding-top:64px;
+}
+.inner {
+	width:100%;
+    padding:0 5%;
+}
+
+
+/* =========================================================== header */
+#header {}
+#header .inner {
+    width:100%;
+    height:64px;
+    padding:0 5%;
+    min-width: auto;
+}
+#header #menu {
+    display:block;
+    width:32px;
+    float:left;
+    margin:20px 24px 0 0;
+    position: relative;
+}
+#header #menu span {
+    display:block;
+    width:100%;
+    height:4px;
+    background-color: #666;
+}
+#header #menu span:nth-of-type(2) {
+    margin:6px 0;
+}
+#header #menu.open span {
+    display:block;
+    width:100%;
+    height:4px;
+    background-color: #666;
+    transition: all 0.2s linear;
+}
+#header #menu.open {
+    height: 24px;
+}
+#header #menu.open span:nth-of-type(1) {
+    position: absolute;
+    top:50%;
+	-webkit-transform: translate(0%, -50%) rotate(45deg);
+	-moz-transform: translate(0%, -50%) rotate(45deg);
+	-ms-transform: translate(0%, -50%) rotate(45deg);
+	-o-transform: translate(0%, -50%) rotate(45deg);
+	transform: translate(0%, -50%) rotate(45deg); 
+}
+#header #menu.open span:nth-of-type(2) {
+    width:0;
+}
+#header #menu.open span:nth-of-type(3) {
+    position: absolute;
+    top:50%;
+	-webkit-transform: translate(0%, -50%) rotate(-45deg);
+	-moz-transform: translate(0%, -50%) rotate(-45deg);
+	-ms-transform: translate(0%, -50%) rotate(-45deg);
+	-o-transform: translate(0%, -50%) rotate(-45deg);
+	transform: translate(0%, -50%) rotate(-45deg); 
+}
+#header .logo {
+    width:30%;
+    float:none;
+    padding:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#header .logo img {
+    width:100%;
+    display: block;
+}
+#header ul {
+    display:none;
+    float: none;
+    width:100%;
+    position: fixed;
+    padding: 0;
+    height:100vh;
+    top:64px;
+    left:0;
+    background-color: rgba(0,0,0,0.80);
+    z-index: 10;
+}
+#header li {
+    float:none;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    padding:0;
+}
+#header a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: block;
+    padding:1.2em 5%;
+}
+#header li a span {
+    display: inline-block;
+    font-size:2.2rem;
+    padding-right:0.8em;
+}
+
+
+/* =========================================================== button */
+.arrow {
+    display:block;
+    position: relative;
+}
+.arrow:after {
+    content:"";
+    display:block;
+    width:8px;
+    height:8px;
+    border-top:1px solid #989898;
+    border-right:1px solid #989898;
+    position: absolute;
+	top: 50%;
+	right: 5%;
+	-webkit-transform: translate(0%, -50%) rotate(45deg);
+	-moz-transform: translate(0%, -50%) rotate(45deg);
+	-ms-transform: translate(0%, -50%) rotate(45deg);
+	-o-transform: translate(0%, -50%) rotate(45deg);
+	transform: translate(0%, -50%) rotate(45deg);
+}
+.arrow-back {
+    display:block;
+    position: relative;
+}
+.arrow-back:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #989898;
+    border-right: 1px solid #989898;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translate(0%, -50%) rotate(-135deg);
+    -moz-transform: translate(0%, -50%) rotate(-135deg);
+    -ms-transform: translate(0%, -50%) rotate(-135deg);
+    -o-transform: translate(0%, -50%) rotate(-135deg);
+    transform: translate(0%, -50%) rotate(-135deg);
+}
+a.btn01 {
+    color:#989898;
+    display: block;
+    width:100%;
+    text-align: center;
+    font-size:1.4rem;
+    padding:0.5em 0;
+    transition: all 0.1s linear;
+    border: 1px solid #989898;
+}
+a.btn01:hover {
+    text-decoration: none;
+    background-color: #DCDCDC;
+}
+
+
+/* =========================================================== section_title */
+section .title {
+    font-size:4rem;
+    position: relative;
+    margin:0 0 24px 0;
+    letter-spacing: 3px;
+    color: #4995CE;
+    text-align: center;
+}
+section .subtitle {
+    font-size:3.6rem;
+    position: relative;
+    margin:0 0 16px 0;
+    letter-spacing: 3px;
+    color: #AECBE6;
+    text-align: left;
+}
+
+
+/* =========================================================== main_visual */
+.main_visual {
+    background: url(/img/home/bg01.png) no-repeat bottom center;
+    background-size: cover !important;
+    height: calc( 100vh - 96px );
+    position: relative;
+}
+.main_visual img {
+    width:100%;
+    display:block;
+    max-width:800px;
+    position: absolute;
+    top: calc( 50% - 64px );
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/* =========================================================== section01 */
+.section01 {
+    padding:4em 0 0;
+}
+.section01 .title {
+    padding:0 0 0.3em;
+}
+.companytext {
+    background: url("/img/home/bg02.png") no-repeat center center;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: calc(((100vw - 100%) / 2) * -1);
+    margin-right: calc(((100vw - 100%) / 2) * -1);
+    padding: 0 calc((100vw - 100%) / 2);
+}
+.companytext-inner {
+    width:100%;
+    padding:4em 0 5em;
+}
+
+.section01 h5 {
+    font-size:2rem;
+    font-weight: normal;
+    padding:0 0 1em;
+}
+.section01 p {
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/* =========================================================== section02 */
+.section02 {
+    padding:4em 0;
+}
+.section02 .inner {
+    padding:0 5%;
+}
+.section02 .title {
+    padding:0 0 0.3em;
+}
+.section02 h5 {
+    font-size:2rem;
+    font-weight: normal;
+    padding:0 0 1em;
+}
+.section02 p {
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/* =========================================================== section03 */
+.section03 {
+    padding:4em 0;
+    background: url("/img/home/bg03.png") no-repeat center center;
+    background-size: cover;
+}
+.section03 .inner {
+    padding: 0 5%;
+}
+.section03 h5 {
+    font-size:2.8rem;
+    font-weight: normal;
+    padding:0 0 1em;
+}
+.section03 p {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+.section03 p span {
+    font-family: elina, sans-serif !important ;
+    font-weight: bold;
+    font-size:2.8rem;
+    text-shadow: 0 0 8px rgba(70,148,209,1);
+}
+
+
+/* =========================================================== section04 */
+.section04 {
+    padding:4em 0 2.5em;
+}
+.section04 .inner {
+    padding: 0 5%;
+}
+.section04 h5 {
+    font-size:2.4rem;
+    padding:0 0 1.5em;
+}
+.section04 table {
+    width:100%;
+}
+.section04 table th,
+.section04 table td {
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: left;
+    display: block;
+}
+.section04 table tr:nth-of-type(2n+1) th,
+.section04 table tr:nth-of-type(2n+1) td {
+    background-color: #fff;
+}
+.section04 table th {
+    background-color: #E3EFF7 !important;
+    padding:0.5em 1em;
+}
+.section04 table td {
+    padding:0.5em 1em 1.5em;
+}
+
+
+/* =========================================================== section05 */
+.section05 {
+    padding:4em 0;
+    background-color: #F7F7F7;
+}
+.section05 .inner {
+    padding:0 5%;
+}
+.section05 .googlemap {
+    padding: 1em 5%;
+}
+.section05 .googlemap iframe {
+    width:100%;
+}
+.section05 .accesstxt {
+    width:100%;
+}
+.section05 .accesstxt p {
+    font-size: 1.2rem;
+    line-height:1.5;
+}
+.section05 .accessbtn {
+    width:100%;
+    display: block;
+    margin:1.5em 0 0;
+    position: static;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+
+
+/* =========================================================== section06 */
+.section06 {
+    padding:4em 0;
+}
+.section06 .inner {
+    padding:0 5%;
+}
+.section06 dd input {
+    background-color: #eee;
+    font-size: 1.6rem;
+    padding:0.8em 1.6em;
+    width:100%;
+}
+.section06 dl {
+    border-bottom:1px dotted #B1B1B1;
+    padding:0 0 16px;
+}
+.section06 dt,
+.section06 dd {
+    font-size: 1.6rem;
+    float:none;
+    text-align: left;
+}
+.section06 dt {
+    width:100%;
+    font-weight: bold;
+    line-height: 50px;
+}
+.section06 dd {
+    width:100%;
+}
+.section06 input[type="submit"] {
+    background-color: #4A95CF;
+    color:#fff;
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    padding:0.8em 0;
+    text-align: center;
+    border-radius: 100px;
+    -webkit-border-radius:100px;
+    -moz-border-radius: 100px;
+    margin:3em 0 0;
+}
+
+
+/* =========================================================== footer */
+#footer .footermenu {
+    display: none;
+}
+#footer .footerobi .inner {
+    padding:2em 5% 0;
+}
+#footer .footerlogo {
+    margin:0 auto;
+    width:35%;
+    padding:0;
+    float:none;
+}
+#footer .footertxt {
+    float: none;
+    font-size:1.4rem;
+    line-height: 1.5;
+    padding:2em 0 0;
+    width:100%;
+}
+#footer .copyright {
+    padding:3em 0 3%;
+}
+#footer .pagetop {
+    position: fixed;
+    bottom:3%;
+    right:3%;
+    width:10%;
+}
+#footer .pagetop a.animated:hover img {
+    animation: none;
+}
+
+
