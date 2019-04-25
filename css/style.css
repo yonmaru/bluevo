@@ -27,6 +27,9 @@
 	margin:0 auto;
 	position:relative;
 }
+html.wf-active {
+    margin-top:0 !important;
+}
 
 
 /* =========================================================== button */
@@ -144,10 +147,11 @@ section .subtitle {
 }
 #header li a span,
 #header a .en {
-    font-family: elina, sans-serif !important ;
-    font-weight: 700;
+    font-family: mr-eaves-modern, sans-serif !important ;
+    font-weight: 400;
     font-style: normal;
     display: block;
+    letter-spacing: 2px;
 }
 #header li a span {
     font-size:2rem;
@@ -258,9 +262,10 @@ section .subtitle {
     line-height: 2.25;
 }
 .section03 p span {
-    font-family: elina, sans-serif !important ;
-    font-weight: bold;
-    font-size:2.8rem;
+    font-family: mr-eaves-modern, sans-serif !important ;
+    font-weight: 800;
+    font-size:3.2rem;
+    line-height: 1.8;
     text-shadow: 0 0 8px rgba(70,148,209,1);
 }
 
@@ -330,6 +335,7 @@ section .subtitle {
 	-ms-transform: translate(0%, -50%);
 	-o-transform: translate(0%, -50%);
 	transform: translate(0%, -50%);
+    font-family: mr-eaves-modern, sans-serif !important ;
 }
 
 
@@ -364,6 +370,7 @@ section .subtitle {
 }
 .section06 dd {
     width:calc(100% - 190px);
+    margin:0 !important;
 }
 .section06 input[type="submit"] {
     background-color: #4A95CF;
@@ -375,6 +382,13 @@ section .subtitle {
     -webkit-border-radius:100px;
     -moz-border-radius: 100px;
     margin:4em 0 0;
+}
+.section06 dd textarea {
+    background-color: #eee;
+    font-size: 1.8rem;
+    padding:0.8em 1.6em;
+    width:100%;
+    height: 7.4em;
 }
 
 
@@ -411,10 +425,11 @@ section .subtitle {
     text-align: left;
 }
 #footer .footermenu li a span {
-    font-family: elina, sans-serif !important ;
-    font-weight: 700;
+    font-family: mr-eaves-modern, sans-serif !important ;
+    font-weight: 400;
     font-style: normal;
     display: block;
+    letter-spacing: 2px;
 }
 #footer .footermenu li a span {
     font-size:2.2rem;
@@ -448,7 +463,8 @@ section .subtitle {
     padding:40px 0 16px;
 }
 #footer .copyright small {
-    font-size:1.2rem;
+    font-size:1.4rem;
+    font-family: mr-eaves-modern, sans-serif !important ;
 }
 #footer .pagetop {
     position: fixed;

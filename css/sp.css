@@ -317,8 +317,6 @@ section .subtitle {
     line-height: 2;
 }
 .section03 p span {
-    font-family: elina, sans-serif !important ;
-    font-weight: bold;
     font-size:2.8rem;
     text-shadow: 0 0 8px rgba(70,148,209,1);
 }
