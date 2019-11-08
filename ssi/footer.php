@@ -14,11 +14,10 @@
         <div class="inner">
             <div class="footerlogo"><a href="/"><img src="/img/logo01.png" alt="bluevo"></a></div>
             <div class="footertxt">
-                <p>
+                <p><br>
                     bluevo株式会社<br>
                     〒105-0012 <br class="only-sp">東京都港区芝大門2-5-5 住友芝大門ビル11F<br>
-                    E-mail : contact@bluevo.co.jp<br>
-                    TEL
+                    <!-- TEL -->
                 </p>
             </div>
             <p class="copyright"><small>Copyright &copy; bluevo Inc. All rights reserved.</small></p>
